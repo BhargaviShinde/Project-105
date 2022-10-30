@@ -12,7 +12,7 @@ for i in os.listdir(path):
         imgs.append(file_name)
 
 frame = cv2.imread(imgs[0])
-width, height, chanels = frame.shape
+height, width, chanels = frame.shape
 print(width, height)
 
 out = cv2.VideoWriter("output.mp4", cv2.VideoWriter_fourcc(*'DIVX'), 0.8, (width,height))
